@@ -1,0 +1,32 @@
+<!-- Copyright 2022 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Storage Manager Show Usage</title>
+		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+		<link rel="stylesheet" href="main.css" />
+		<script src="setup.js" type="module" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Output the current storage details</h1>
+		</header>
+		<main>
+			<form action="/">
+				<label for="storage">Populate storage by this much:</label>
+				<select name="storage" id="storage">
+					<option value="1000">1 Kilobyte</option>
+					<option value="500000">500 Kilobytes</option>
+					<option value="1000000">1 Megabyte</option>
+				</select>
+				<button id="populate-storage">Populate storage</button>
+			</form>
+
+			<ul id="output"></ul>
+		</main>
+	</body>
+</html>

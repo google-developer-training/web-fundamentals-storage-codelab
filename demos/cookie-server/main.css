@@ -1,0 +1,13 @@
+/* Copyright 2022 Google LLC.
+SPDX-License-Identifier: Apache-2.0 */
+
+header,
+footer,
+main {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+form {
+	margin: 0 auto;
+}

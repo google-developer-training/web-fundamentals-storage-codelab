@@ -1,0 +1,61 @@
+<!-- Copyright 2022 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!-- Don't edit this HTML code -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Cache Storage API</title>
+		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+
+		<link rel="stylesheet" href="main.css" />
+		<script defer type="module" src="setup.js"></script>
+	</head>
+	<body>
+		<main>
+			<form action="/cache-demo" method="GET">
+				<label for="shipping_preference">Shipping preference:</label>
+				<select name="shipping_preference" id="shipping_preference">
+					<option value="free_shipping" selected>Free</option>
+					<option value="48">48 hour</option>
+					<option value="24">24 hour (tracked)</option>
+				</select>
+
+				<label for="reason">Buying for:</label>
+				<select name="reason" id="reason">
+					<option value="myself">Myself</option>
+					<option value="gift" selected>Gifts for others</option>
+					<option value="myself_gift">
+						Both for myself, and gifts for others
+					</option>
+				</select>
+
+				<label for="fav_color">Favorite color</label>
+				<input
+					type="color"
+					id="fav_color"
+					name="fav_color"
+					value="#4B0082"
+				/>
+				<label for="simulate_error"
+					>Simulate an error? (for testing)</label
+				>
+
+				<select name="simulate_error" id="simulate_error">
+					<option value="no" selected>No</option>
+					<option value="yes">
+						Yes, have the server return an error
+					</option>
+				</select>
+
+				<button type="submit">Submit</button>
+
+				<p class="coupon-code"></p>
+			</form>
+
+			<ol class="output"></ol>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- Copyright 2022 Google LLC.
+SPDX-License-Identifier: Apache-2.0 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Clear all web storage</title>
+		<link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+		<script type="module" src="main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Clearing web storage with DevTools</h1>
+
+			<p>Your goal is to use DevTools to clear the web storage</p>
+		</header>
+		<main>
+			<section>
+				<button id="populate">Populate web storage</button>
+			</section>
+
+			<ul>
+				<li>
+					<p>
+						<strong>Local Storage</strong>:
+						<span id="localStorage"></span>
+					</p>
+				</li>
+
+				<li>
+					<p>
+						<strong>Cookie Storage</strong>:
+						<span id="cookieStorage"></span>
+					</p>
+				</li>
+
+				<li>
+					<p>
+						<strong>Cache Storage</strong>:
+						<span id="cacheStorage"></span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>IndexedDB</strong>:
+						<span id="indexedDBStorage"></span>
+					</p>
+				</li>
+			</ul>
+
+			<p id="output"></p>
+		</main>
+	</body>
+</html>
