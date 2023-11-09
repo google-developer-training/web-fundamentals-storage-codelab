@@ -6,6 +6,7 @@
 import express from "express";
 import cors from "cors";
 import serveIndex from "serve-index";
+
 const app = express();
 const port = 3000;
 

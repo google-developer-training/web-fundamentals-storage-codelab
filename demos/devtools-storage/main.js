@@ -3,8 +3,8 @@
 
 // Don't edit any code in this file
 
-import { get, set, keys } from "https://cdn.jsdelivr.net/npm/idb-keyval@6/+esm";
-import cookies from "https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/+esm";
+import { set, keys } from "idb-keyval";
+import cookies from "js-cookie";
 
 let CACHE_KEY_INDEX;
 let CACHE_KEY = `codelab`;
@@ -75,7 +75,7 @@ function handlePopulateButton() {
 function checkLocalStorage() {
 	const localStorageKeysWithoutCacheKeyIndex = Object.keys(
 		localStorage
-	).filter((item) => item !== CACHE_KEY_INDEX_KEY);
+	).filter(item => item !== CACHE_KEY_INDEX_KEY);
 	const length = localStorageKeysWithoutCacheKeyIndex.length;
 	document.querySelector("#localStorage").textContent = `${length} items`;
 }

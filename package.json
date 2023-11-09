@@ -1,18 +1,17 @@
 {
-  "name": "web-fun-storage-codelab",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "description": "Code demos for web storage codelab",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "serve-index": "^1.9.1"
-  }
+	"name": "web-fun-storage-codelab",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Code demos for the web storage codelab",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"license": "Apache-2.0",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"serve-index": "^1.9.1"
+	}
 }
